@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>조금은 더러운 나의 첫 수능일기</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1&family=Grandiflora+One&family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&family=Song+Myung&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1&family=Grandiflora+One&family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&family=Song+Myung&display=swap" rel="stylesheet">
+
+
+	<style>
+@font-face {
+    font-family: 'MiraenaMu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_04@1.0/Future_tree.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+  html{
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+  word-break: keep-all;}
+		html{background-color: whitesmoke;}
+		section, body, h1, h2, p, ol, ul{margin: 0;padding: 0}
+
+
+		div.contents{
+				width: 600px;
+				margin: auto;
+				border: 1px solid black;
+				padding: 50px 100px;}
+
+		section{margin-bottom: 30px;}
+		div.logo{width: 600px;
+				margin: auto;
+				border: 1px solid black;
+				padding: 50px 100px;}
+		.question{
+			font-family: "Noto Sans KR", sans-serif;
+			font-weight: 600;
+			font-size: 1.2rem;
+			padding-top: 30px}
+		.question2{
+			font-weight: 600;
+			font-size: 1.1rem;
+			padding-top: 30px}
+		.box{
+			border: 1px solid black;
+			padding: 10px;
+		}
+		.box2{
+			border: 1px solid black;
+			padding: 15px;
+		}
+		.comment{
+			font-family: 'MiraenaMu';
+			font-size: 28px;
+			padding: 30px 0px 0px}
+
+		img{width: 100%;
+		display: block;
+		padding: 10px 0px;
+		padding-bottom: 30px}
+		h1{font-weight: 700;
+			font-size: 2rem;
+			text-align: center;}
+		h2{font-weight: 700;
+			font-size: 3.5rem;
+			text-align: center;
+			border-bottom: 1px solid black; 
+			padding-bottom: 30px;
+			margin-bottom: 30px;}
+		h3{font-weight: 700;
+			font-size: 1.8rem;
+			text-align: center;}
+		p{font-weight: 400;
+			font-size: 1rem;
+			line-height: 1.8;
+			text-align: left;
+			margin-bottom: 20px;
+			padding: 10px 0;}
+
+		.exam-header{
+			position: relative;
+    		height: 80px;
+		    display: flex;
+		    align-items: center;
+		    gap: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid black;}
+
+			.badge{
+			    border: 1px solid black;
+			    border-radius: 20px;
+			    padding: 6px 14px;
+			    font-size: 14px;
+			    background-color:  whitesmoke;
+			    position: absolute;
+	    		left: 0;}
+
+			.exam-header h1{
+			 	position: absolute;
+		    	left: 50%;
+		    	transform: translateX(-50%);
+			    font-weight: 700;
+				font-size: 2.5rem;
+			    justify-content: center;
+			    margin: 0;}
+
+		ul {list-style: none;
+		  display: flex;
+		  justify-content: center;
+		  gap: 10px;
+		  padding: 30px;}
+
+		ul li a {text-decoration: none;
+			  display: inline-block;
+			  padding: 10px 18px;
+			  border-radius: 24px;
+			  background-color: whitesmoke;
+			  color: black;
+			  border: 1px solid black;}
+		ul li a:hover {
+  				background-color: black;
+ 				color:  whitesmoke;
+ 				transition: all 1s; }
+
+ 		.circle-list{
+		    list-style: none;
+		    padding: 0;
+		    counter-reset: num;
+		}
+
+		.circle-list li{
+		    counter-increment: num;
+		    margin-bottom: 5px;
+		    position: relative;}
+
+		.circle-list li::before{
+		    content: counter(num);
+		    display: inline-flex;
+		    justify-content: center;
+		    align-items: center;
+
+		    width: 15px;
+		    height: 15px;
+		    margin-right: 10px;
+
+		    border: 1px solid #000;
+		    border-radius: 50%;
+
+		    font-size: 14px;}
+		.circle-list li.correct::after{
+		    content: "✓";
+		    position: absolute;
+		    left: -6px;
+		    top: -20px;
+
+		    font-size:40px; 
+		    font-weight: 900;
+		    color: red;}
+		.pic1{background: url(image2.png);
+			background-size: cover;
+			background-attachment: fixed;
+			color: red;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    text-align: center;
+		    padding: 50px;
+		    margin-top: 0;
+    		padding-top: 0;
+			} 
+			.big{
+				padding: 50px ;
+				font-size: 48px;
+    		font-weight: bold;}
+    		.tapdance{width: 500px;
+    			padding-left: 700px;}
+
+
+    	
+		.pic2{background: url(image4.png);
+			background-size: cover;
+			background-attachment: fixed;}
+
+		.pic3{background: url(image5.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			color: red;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    text-align: center;
+		    padding: 50px 50px 50px;
+		    margin-top: 0;
+    		}
+
+		.Black{
+				background:black;
+				color: white;
+				padding: 200px 100px 100px;
+				font-weight: 600;
+				font-size: 1.5rem;
+				display: flex;
+    			justify-content: center;
+    			align-items: center;
+    			margin-bottom: 0;
+    			}
+
+    	.Black .circle-list li{
+		    margin-bottom: 200px;
+		    line-height: 1.6;
+		}
+
+		.Black .circle-list li::before{
+   			text-align: center;
+    		flex-direction: column;
+    		align-items: center;
+			border: 1px solid white;
+			color: white;}
+
+		.Black .circle-list li.correct::after{
+		    top: -10px;
+		}
+
+		.nonborder .contents{
+				border-bottom: none;
+				padding-bottom: 0;
+				margin-bottom: 0}
+
+		.nonborder2 .contents{
+				border-top: none;
+				padding-bottom: 50;
+				margin-bottom: 0}
+
+		.red{
+			padding: 200px 0px 100px;
+			color: red;
+			font-size: 30px;
+    		font-weight: bold;}
+    	.red2{
+			padding: 100px 0px ;
+			color: red;
+			font-size: 30px;
+    		font-weight: bold;}
+				    
+		.btn {
+				  position: relative;
+				  transition: all 1s;
+				  min-height: 180px;
+				}
+
+				.btn span {
+				  display: block;
+				  transition: opacity 0.5s ease;
+				}
+
+				.text-default {
+				  opacity: 1;
+				}
+
+				.text-hover {
+				  opacity: 0;
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  width: 100%;
+				}
+
+				.btn:hover .text-default {
+				  opacity: 0;
+				}
+
+				.btn:hover .text-hover {
+				  opacity: 1;
+				}
+
+
+		.btn2 {
+				  position: relative;
+				  transition: all 1s;
+				  min-height: 200px;
+				}
+
+				.btn2 span {
+				  display: block;
+				  transition: opacity 0.5s ease;
+				}
+
+				.text-default2 {
+				  opacity: 1;
+				}
+
+				.text-hover2 {
+				  opacity: 0;
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  width: 100%;
+				}
+
+			
+				.btn2:hover .text-default2 {
+				  opacity: 0;
+				}
+
+				.btn2:hover .text-hover2 {
+				  opacity: 1;
+				}
+
+
+		footer{
+			padding: 20px;
+			text-align: center;
+			display: flex;
+			justify-content: center;}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="contents">
+			<h1>2023학년도 대학수학능력시험 문제지</h1>
+		</div>
+	</header>
+	<nav>
+		<div class="wrap flex">
+			<ul>
+				<li><a href="#one">제 1교시</a></li>
+				<li><a href="#two">제 2교시</a></li>
+				<li><a href="#three">점심 식사</a></li>
+				<li><a href="#four">제 3교시</a></li>
+				<li><a href="#five">제 4교시</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+	<section id="one">
+		<div class="contents">
+			<div class="exam-header">
+	    		<span class="badge">제 1 교시</span>
+	    		<h1>국어 영역</h1>
+			</div>
+			<p class="question">[1~3]. 다음 글을 읽고 물음에 답하시오.</p>
+			<img src="image1.png">
+			<p class="box"> 
+				오늘은 나의 첫 고3 모의고사이자 수능날.만반의 준비…까지는 아니지만 나름의 준비를 끝낸 뒤 부모님과 작별인사를 한 뒤 마인드 컨트롤을 한다. 
+				<br>어제 예비소집일로 왔던 학교는 나름 익숙해진 것 같다. 내 자리를 찾아 1교시 국어시간을 맞이할 준비를 한다. 무난하게 푼 것 같다. 내가 무난하게 풀었다는 것은 남들에게는 쉬웠다는 뜻. 점점 불안해진다.
+			</p>
+			<p class="question2"> 1. 윗글의 내용과 일치하지 않는 것은?</p>
+			<ol class="circle-list">
+			    <li>나는 떨린다.</li>
+			    <li>엄마 보고싶다.</li>
+			    <li class="correct">수능만점은 내 것이다.</li>
+			    <li>신의 도움이 절실하다.</li>
+			    <li>국어는 가장 자신없는 과목이다.</li>
+			</ol>
+		</div>
+	</section>
+	<section id="two">
+		<div class="contents">
+			<div class="exam-header">
+	    		<span class="badge">제 2 교시</span>
+	    		<h1>수학 영역</h1>
+			</div>
+			<p class="question2"> 1. 이 시험지에서 풀 수 있는 문제의 개수는?</p>
+			<ol class="circle-list">
+			    <li class="correct">4</li>
+			    <li>10</li>
+			    <li>15</li>
+			    <li>20</li>
+			    <li>30</li>
+			</ol>
+			<p class="comment"> 정답은 1번. 첫 페이지 4문제를 제외하고는 어차피 봐도 모르는 문제다. 
+			<br>대충 찍고, 잠이 오지 않으니 시험지에 낙서나 하자.
+			<br>주관식은 최애 생일로 찍는다.
+			</p>
+		</div>
+	</section>
+	<section id="three">
+		<div class="contents">
+			<div class="exam-header">
+	    		<span class="badge">점심 식사</span>
+	    		<h1>메뉴 영역</h1>
+			</div>
+			<p class="question2"> 1. 다음 모녀의 대화에 기반해 수능날 조심해야하는 메뉴로 가장 적절한 것은?</p>
+			<p class="box2"> 
+				엄마:수능의 특수성을 고려하여 속이 편한 음식들로 도시락을 구성하였어.
+				<br>지아:우리 엄마는 음식 솜씨가 좋아. 엄마 음식은 국물까지 싹싹 비우게 돼.
+			</p>
+			<ol class="circle-list">
+			    <li>소세지</li>
+			    <li>장조림</li>
+			    <li class="correct">콩나물 국</li>
+			    <li>계란후라이</li>
+			    <li>초콜릿</li>
+			</ol>
+			<img src="image3.png">
+			<p class="comment"> 대망의 점심시간이다. 그 날은 이상하게도 평소보다 음식이 더 맛있었다. 
+			<br>특히나 콩나물국이. 
+			<br>그래 콩나물국. 
+			<br>그 콩나물국이 문제였다. 너무 맛있던 탓에 국물까지 싹싹 비웠다.
+			</p>
+			
+		</div>
+	</section>
+	<section class="nonborder" id="four">
+		<div class="contents">
+			<div class="exam-header">
+	    		<span class="badge">제 3교시</span>
+	    		<h1>영어 영역</h1>
+			</div>
+			<p class="question2"> 1. 대학수학능력평가에 관한 다음 내용을 듣고, 여자의 상황과 일치하는 것을 모두 고르시오.</p>
+		</div>
+	</section>
+
+	<section class="Black">
+				<ol class="circle-list">
+				    <li class="correct">잠깐, 무언가 잘못되었다.</li>
+				    <li class="correct">화장실이 가고싶다.</li>
+				    <li class="correct">문제가 문제가 아니다.</li>
+				    <li class="correct">여자는 유명한 작은 방광이다.</li>
+				    <li class="correct">커피를 마시면 화장실을 5번정도는 가야한다.</li>
+				</ol>
+	</section>
+		<section class="pic1">
+			<div>
+				<p class="big">누군가 내 방광 위에서 탭댄스를 추는 것만 같다.</p>
+				<img class="tapdance" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWp2a3MyeDNyN291cDA4eGFqNGJnMTA5ZDluMnA5N3BqMndvN3NjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3o7WIEwdp76ajQStIQ/giphy.gif">
+			</div>
+		</section>
+	<section class="nonborder2">
+		<div class="contents">
+			<p class="comment">그렇다. 첫 모의고사이자 수능이기에 내 방광의 사이즈를 미처 계산하지 못한것이다.</p>
+			<p class="red">머릿속에 ‘방광도 실력이야 꽉 잡아’ 라는 문구가 계속 떠오른다.</p>
+		
+			<img src="image4.png">
+			<p class="question2"> 2. 다음 글에 드러난 Jiah의 심경 변화로 가장 적절한 것은?</p>
+			<div class="btn">
+			  <span class="text-default">The College Scholastic Ability Test is based on relative evaluation, which means that I am not the only one struggling.
+			With this thought in mind, I began to question whether I should abandon my dignity as a human being, even if only for a moment.
+			Feeling increasingly anxious, I continued working on the listening section.
+			I could not help but wonder why the final question was played twice.
+			As soon as it ended, I decided to leave immediately.</span>
+			  <span class="text-hover">그냥…저질러버릴까? 지아는 포기하고 싶었다.<br>'수능은 상대평가잖아. 나만 못보는게 아니야.'<br>'그냥 인간으로서의 존엄성…한번 쯤 버릴까?'라는 생각을 하며 초조하게 듣기평가를 풀었다.'마지막 문제는 왜 또 두 번이나 들려주는거야???'지아는 화가 났다.<br>'한 번만 듣고 바로 나간다.'<br>지아는 마지막 문제를 듣고 바로 교실 밖으로 뛰쳐 나갔다. 
+			  </span>
+			</div>
+			
+			<ol class="circle-list">
+			    <li>confused → pleased</li>
+			    <li>confident → excited</li>
+			    <li>bored → relieved</li>
+			    <li class="correct">embarrassed → furious</li>
+			    <li>thrilled → interested</li>
+			</ol>
+			<p class="question2"> 3. 수능 도중 화장실을 가기 위해서 거쳐가야 하는 관문은?</p>
+
+<div class="btn2">
+			  <span class="text-default2">A staff member holding a metal detector seemed uncertain about why I had stepped out of the classroom, hesitating as if caught in a silent tug-of-war between approaching me and staying where he was. With my whole body, I signaled for him to come closer, and after a brief inspection, I was finally allowed to go to the restroom. Surprisingly, the security system of the College Scholastic Ability Test did not seem as strict as I had expected.</span>
+
+			  <span class="text-hover2">그거 아는가? <br>수능 도중 화장실을 가기 위해서는 복도에 상주하고 계시는 ‘금속탐지기를 든 교직원’을 거쳐야 한다.<br>그분은 내가 왜 교실 밖으로 나왔는지 모르는지 내 쪽으로 올듯 말듯 지옥의 줄다리기를 시작했다. <br>나는 온 몸으로 이쪽으로 와달라고 외쳤고, 간단한 검사 끝에 화장실을 갈 수 있었다.<br>생각보다 수능의 보안 시스템이 허술하더라. 나는 돌아가 영어 시험을 마저 풀었고, 그 해는 유독 영어가 어려웠다.
+			  </span>
+</div>
+			<ol class="circle-list">
+			    <li>ghost</li>
+			    <li>student</li>
+			    <li>zombie</li>
+			    <li>mom</li>
+			    <li class="correct"> teacher holding metal detector</li>
+			</ol>
+</div>
+</section>
+
+<section class="pic3">
+			<div>
+				<p class="big">Goddamn Metal Scanner</p>
+			</div>
+		</section>
+	
+<section>
+	<div class="contents">
+			<p class="comment"> 화장실을 다녀왔다. 시간이 없다. 평소보다 더 빨리 풀어내야만 한다. 문제들이 유독 어렵게 느껴진다. 모르는건...</p>
+			<p class="red2">pass</p>
+			<p class="red2">pass</p>
+			<p class="red2">pass</p>
+			<p class="red2">pass</p>
+			<p class="red2">pass</p>
+			<p class="red2">잠깐...왜 시간이 남지?</p>
+
+			</div>
+	</section>
+
+
+	<section id="five">
+		<div class="contents">
+			<div class="exam-header">
+	    		<span class="badge">제 4교시</span>
+	    		<h1>사회탐구 영역</h1>
+			</div>
+			<p class="question2"> 1. 2023학년도 수능 사회탐구 영역을 응시하고 있는 학생의 입장으로 가장 적절한 것은?</p>
+			<img src="image6.png">
+
+			<ol class="circle-list">
+			    <li class="correct">음? 이런 유형의 문제는 본 적도, 공부한 적도 없다.</li>
+			    <li>사회탐구는 자신있다.</li>
+			    <li>나에게 좋은 점수를 안겨줄 것이다.</li>
+			    <li>나는 칸트가 좋다.</li>
+			    <li>지영쌤의 조교가 될 수 있을 것 같다.</li>
+			</ol>
+			<p class="comment">이 해의 사회탐구는 나를 죽이러 온 나의 구원자였다. 역대 모의고사, 수능의 난이도와는 차원이 달랐다.</p>
+			<p class="comment">그렇게 나의 운명은 정해졌다...강제로...</p>
+		</div>
+	</section>
+	<section>
+		<div class="contents">
+			<h3>수고하셨습니다. 내년에 또 봐요.</h3>
+		</div>
+	</section>
+
+	<footer>
+		<div>
+			<p>Copyright &copy; 2026 박지아. 모든 권리 보유. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
